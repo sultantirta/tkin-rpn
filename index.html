@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard TKIN</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%23121413%22/%3E%3Ctext x=%2216%22 y=%2220%22 font-size=%229%22 font-family=%22monospace%22 fill=%22%23FAFAF8%22 text-anchor=%22middle%22%3ETKIN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><div class="mark" aria-hidden="true">TKIN</div><div><b>Tim Kajian Internal</b><span>PT Riset Perkebunan Nusantara</span></div></div>
+    <nav id="nav" aria-label="Menu utama"></nav>
+    <div class="demo" id="who"></div>
+  </aside>
+  <div class="main">
+    <div class="bar">
+      <div class="crumb"><span>TKIN</span><span aria-hidden="true">/</span><b id="crumb">Ringkasan</b></div>
+      <div class="bar-r"><span id="skin-slot"></span><span class="flag">Prototipe · data contoh</span><label class="muted" for="year" style="font-size:12px">Tahun</label><select class="in" id="year" data-chg="year" style="height:28px"></select></div>
+    </div>
+    <div class="head"><div><h1 id="vtitle">Ringkasan</h1><p id="vsub"></p></div><div class="acts" id="vacts"></div></div>
+    <main id="view"></main>
+  </div>
+</div>
+<div id="gate"></div>
+<div id="resp"></div>
+<div id="drawer" class="drawer" hidden><div class="panel" role="dialog" aria-modal="true" aria-label="Detail kajian"></div></div>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
